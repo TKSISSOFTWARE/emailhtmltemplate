@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://www.monedafrontera.com/sicmonedafrontera/favicon.ico"/>
+<!--<meta http-equiv="refresh" content="5"/>-->
+<title>Reporte de Activaciones</title>
+</head>
+
+<body style="margin: 0; padding: 0; -webkit-text-size-adjust:none;">
+ <table style="background-color:#999999; height:100%; margin:0; padding:0; width:100% ;">
+  <tr>
+   <td>
+    <!--body email-->
+	<table align="center" border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
+	 <tr>
+	  <td>
+	   <table align="center" border="0" cellpadding="0" cellspacing="0" width="800">
+		<tr>
+		  <td bgcolor="#FFFFFF">		
+     	   <!--head mail-->
+		   <table align="center" border="0" cellpadding="0" cellspacing="0" width="800">
+		   <tr>
+		   <td>
+		   <table border="0" cellpadding="5" cellspacing="0" width="100%">
+			<tr>
+            	<td valign="top">
+                	<div style=" padding: 10px 0px 0px 0px;">
+					<span style="font-size: 10px; font-family: Arial; font-weight:bold; color: #999999">
+				   </span>
+                    </div>
+                 </td											
+             ></tr>
+           </table>
+		   </td>
+		   </tr>
+ 		   <tr>
+		   	<td bgcolor="#ffffff" style="padding:5px 10px 5px 10px">
+			<img width="140" height="62" src="http://www.monedafrontera.com/sicmonedafrontera/LogoFondosBlancos.png" alt="logomoneda"/>
+			</td>
+            <td bgcolor="#ffffff" height="10" style="padding:5px 5px 5px 20px">
+			</td>
+		   </tr>
+		   </table>
+		  </td>
+		 </tr>
+		 <!-- end head mail-->
+		 <tr>
+		 <!-- content mail-->
+		  <td bgcolor="#ffffff" style="padding:5px 20px 5px 20px">
+		   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+		  <tr>
+		   <td style="padding: 5px 0px 10px 0px">
+			<span  style="font-size: 22px; font-family: Arial; display:block; font-weight:bold; color:#333333"> 
+			<center>Cambio de Tasa Global- <span id="fecha"></span></center></span><br/>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td bgcolor="#ffffff" style="padding:10px 0px 5px 0px" >
+			<span style="font-size: 14px; font-family: Arial,Helvetica,sans-serif; display:block; color:#454545">
+			Hola&nbsp;<span id="nombreAsesor"></span>;</span>
+			<span id="mensaje"  style="font-size: 14px; font-family: Arial,Helvetica,sans-serif; display:block; line-height: 24px; color:#454545">
+			</span>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td style="padding: 5px 20px 3px 20px">
+		   <center>
+		
+		   <div id="proximas" style="padding:5px 0px 10px 0px">
+
+		   <span style="font-size: 14px; font-family: Arial,Helvetica,sans-serif; display:block; color: #333333">
+
+		   	<table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse; border-color:#666666">
+		   	<tr>
+		   		<th style="padding: 2px 3px 2px 3px; border-color:#666666; background:#B9B7B7;">
+		   			<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color: #333333">
+		   			<strong>Precio Actual de la Tasa: </strong>
+		   			</span>
+		   		</th>
+		   		<th style="padding: 2px 3px 2px 3px; border-color:#666666; ">
+		   			<span id="ptasa"  style="font-size: 14px; font-family: Arial,Helvetica,sans-serif; display:block; line-height: 24px; color:#454545">
+		   		    </span>
+		   	    </th>
+		   	   <th style="padding: 2px 3px 2px 3px; border-color:#666666; background:#B9B7B7;" >
+		   	   	<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color: #333333">
+		   			<strong>Precio Actual del Porcentaje:</strong>
+		   		</span>
+		   		</th>
+		   		<th style="padding: 2px 3px 2px 3px; border-color:#666666">
+		   			<span id="pporcentaje"  style="font-size: 14px; font-family: Arial,Helvetica,sans-serif; display:block; line-height: 24px; color:#454545">
+		   		    </span>
+		   	   </th>
+
+		   	</tr>
+		   </table>
+
+           <br>
+
+		   <strong>Tasas negociadas a promotores para <span id="paisT" style="font-size:16px;"> </span></strong>
+		   </span> 
+		   <br>
+		   <table id="detalleprox" border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse; border-color:#666666">
+			<thead>
+			<tr>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color: #333333">
+				<strong>#</strong>
+				</span>
+				</th>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color:#333333">
+				<strong>Promotor</strong>
+				</span>
+				</th>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color:#333333">
+				<strong>Establecimiento</strong>
+				</span>
+				</th>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color:#333333">
+				<strong>Franquicia</strong>
+				</span>
+				</th>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color:#333333">
+				<strong>Banco</strong>
+				</span>
+				</th>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color:#333333">
+				<strong>Fecha Inicio</strong>
+				</span>
+				</th>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666; ">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color:#333333">
+				<strong>Tasa <span id="tipo"> </span></strong>
+				</span>
+				</th>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666; ">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color:#333333">
+				<strong>Opcion</strong>
+				</span>
+				</th>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666; ">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color:#333333">
+				<strong>Porcentaje</strong>
+				</span>
+				</th>
+				<th style="padding: 2px 3px 2px 3px; border-color:#666666; ">
+				<span style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; color:#333333">
+				<strong>Opcion</strong>
+				</span>
+				</th>
+			</tr>
+			</thead>
+			<tbody><!-- Aca la aplicacion inserta el detalle-->
+			</tbody>
+			</table>&nbsp;
+			</div>
+
+		   
+			</center>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td style="padding: 5px 0px 5px 0px">
+			<span  style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; display:block; line-height: 18px; color:#454545">
+			Atentamente,<br />
+			<strong>
+			Sistema Integral de Clientes - SIC<br />
+			<span style="font-size: 15px;">Moneda Frontera</span>
+			</strong></span>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td style="padding: 5px 5px 2px 5px">
+		   <center>
+		   </center>
+		   </td>
+		  </tr>
+		 </table>
+		  </td>
+		 </tr>
+		 <tr>
+		  <td bgcolor="#002f97" style="padding: 10px 25px 10px 25px">
+		  <table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<span style="font-size: 11px; font-family: Arial,Helvetica,sans-serif; color: #FFFFFF">
+				Por favor, no responda a este correo electrónico. Este mensaje se envía desde una dirección que no puede recibir mensajes.
+				</span>
+				</td>
+			</tr>
+		  </table>
+		  </td>
+		 </tr>
+		 <!--end content mail-->
+		</table>
+		<!--end body mail-->
+	  </td>
+	 </tr>
+	</table> 
+	<br />
+  </td>
+  </tr>
+ </table>
+</body>
+</html>
+
